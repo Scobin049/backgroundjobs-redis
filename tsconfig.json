@@ -1,11 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2017",    
-    "module": "commonjs",  
+    "target": "es5",
+    "module": "commonjs",
     "allowJs": true,
-    "esModuleInterop": true,                             
-    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "paths": {
+      "~/*": ["./*"]
+    }
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src"]
 }
